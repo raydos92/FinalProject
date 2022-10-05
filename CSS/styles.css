@@ -2,10 +2,12 @@ img {
     width: 150px;
     height: 50px
 }
+
 h1{
     text-align: center
 }
 
+<<<<<<< HEAD
 div{
     display:block;
 }
@@ -46,3 +48,11 @@ hr {
     padding-left:auto ;
 
 }
+=======
+#aboutFirstImg {
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+>>>>>>> 4f32dbaeb0b533afe1a4ac4cb7a19f1a6e25442e
