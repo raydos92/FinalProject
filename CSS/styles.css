@@ -5,3 +5,14 @@ img {
 h1{
     text-align: center
 }
+
+/* on bio cards, makes our roles in italic */
+.card-role {
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.card {
+    display: flex;
+}
