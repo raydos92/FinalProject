@@ -8,7 +8,7 @@ h1{
     text-align: center
 }
 
-<<<<<<< HEAD
+
 div{
     display:block;
 }
@@ -49,7 +49,7 @@ hr {
     padding-left:auto ;
 
 }
-=======
+
 #aboutFirstImg {
     /* jenny, i changed the height and width to be rems so they will scale! -melissa */
     height: 20rem;
