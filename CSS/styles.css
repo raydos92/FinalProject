@@ -8,7 +8,48 @@ h1{
     text-align: center
 }
 
+<<<<<<< HEAD
+div{
+    display:block;
+}
 
+.rte {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #777;
+}
+hr.hr--small {
+    border-width: 1px 0 0;
+    margin: 15px auto;
+    width: 20px;
+}
+hr {
+    clear: both;
+    border-top: solid #ff94bd;
+    height:0;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+}
+.mug{
+    top: 0;
+    max-width: 560px;
+    max-height: 460px;
+    width:300px;
+    height:200px;
+    position:relative;
+    padding-left:auto ;
+
+}
+=======
 #aboutFirstImg {
     /* jenny, i changed the height and width to be rems so they will scale! -melissa */
     height: 20rem;
