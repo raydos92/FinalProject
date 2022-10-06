@@ -1,9 +1,20 @@
+/* this selected all images, so I commented it out - it made all the images of the cards go wacky! -melissa 
 img {
     width: 150px;
     height: 50px
 }
+*/
 h1{
     text-align: center
+}
+
+
+#aboutFirstImg {
+    /* jenny, i changed the height and width to be rems so they will scale! -melissa */
+    height: 20rem;
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
 }
 
 /* on bio cards, makes our roles in italic */
