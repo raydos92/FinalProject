@@ -8,19 +8,24 @@
   <title>Document</title>
 </head>
 <body>
-    <!--INSERT NAVBAR HERE-->
-    <nav class="navbar navbar-expand-lg bg-light">
 
+
+
+    <!--INSERT NAVBAR HERE-->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <!--need to add logo -->
-      <img class="mg" src="">
+      <img class="img" src="">
 
-
-      <form class="d-flex" role="search">
+      <!-- search form /not using
+        
+        <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
-
+        -->
+<!-- // testing the next line div without this class :   class="container-fluid" -->
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -36,28 +41,66 @@
               <li class="nav-item">
                 <a class="nav-link" href="#" >Help</a>
               </li>
-              <!--
+
+              <!-- checkout / not using
               <li class="nav-item">
                 <a class="nav-link" href="checkout_form.html" >Your Cart</a>
               </li> -->
+
+
             </ul>
             
           </div>
         </div>
       </nav>
-  <div id="list-items">
-    <h1>Sample meow 1</h1>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div>
+
+
+
+
+
+
+
+  <div class="container" id="list-items">
+
+
+
+    <h1>products available</h1>
+    <p>cards will populate here</p>
+
+
+
+<!-- this is the part that will populate from function -->
+<div id="template" class="card" style="width: 18rem;">
+      <img src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-0e89be3e_540x.jpg?v=1600827382" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Mug title</h5>
         <h5 class="card-price">Price</h5>
         <p class="card-text">Description meow</p>
         <a href="#" class="btn btn-primary">Add to cart</a>
       </div>
-    </div>
-    <h2>Sample meow 2</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  > <h2>Sample meow 2</h2>
     <h3>Sample meow 3</h3>
+    -->
+
+
+
   </div>
 
 
