@@ -1,6 +1,6 @@
 // create ProductsController Class
 
-class ProductsController {
+export class ProductsController {
     constructor(currentId = 0) {
       this.products = [];
       this.currentId = currentId;
@@ -23,10 +23,12 @@ class ProductsController {
       this.products.push(item);
     }
   }
+
   
   
-  // const mugs = new ProductsController();
-  // mugs.addProduct('catMug1', "it's a mug", 'IMG', 3, '11/22');
-  // console.log(mugs.products);
-  // mugs.addProduct('catMug2', "it's a mug", 'IMG', 5, '11/22');
-  // console.log(mugs.products);
+  // tests
+    // const mugs = new ProductsController();
+    // mugs.addProduct('catMug1', "it's a mug", 'IMG', 3, '11/22');
+    // console.log(mugs.products);
+    // mugs.addProduct('catMug2', "it's a mug", 'IMG', 5, '11/22');
+    // console.log(mugs.products);
