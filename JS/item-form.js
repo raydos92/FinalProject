@@ -14,6 +14,11 @@ submit.addEventListener('click', addItemCard)
 https://wesbos.com/javascript/05-events/prevent-default-and-form-events
 
 
+addProduct(title, description, img, price, createdAt)
+
+
+
+
 //Update the items list in local storage so the data is also reflected on the items.html.
 
 //Clear the values from each form input, ready for the next submission.
