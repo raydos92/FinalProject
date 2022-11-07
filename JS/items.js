@@ -9,7 +9,7 @@
     
     //this is the html well use for the function. Melissa will tweak it 
     <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="..." class="card-img-top" alt="..."></img>
     <div class="card-body">
       <h5 class="card-title">Mug title</h5>
       <h5 class="card-price">Price</h5>
