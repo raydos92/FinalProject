@@ -11,7 +11,11 @@ console.log(submit);
 
 //When the submit event fires, if validation of the form is successful, use the values of each input in the form to call the itemsController's addItem method.
 
+addProduct(title, description, img, price, createdAt)
+
+
 //Note: Make sure to prevent the default action of the form!
+https://wesbos.com/javascript/05-events/prevent-default-and-form-events
 
 //Update the items list in local storage so the data is also reflected on the items.html.
 
