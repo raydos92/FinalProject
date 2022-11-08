@@ -1,3 +1,5 @@
+import { addItem } from 'JS/items.js';
+import { ProductsController } from 'JS/itemsController.js';
 
 //Make sure a new ItemsController is initialized near the top of the item-form.js file.
 
