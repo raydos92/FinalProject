@@ -1,20 +1,28 @@
+import { addItemCard } from './items.js';
+import { ProductsController } from './itemsController.js';
 
 //Make sure a new ItemsController is initialized near the top of the item-form.js file.
 
 const mugs = new ProductsController();
 
 //In item-form.js, add an event listener to the New Item form, listening to the submit event. If there is already an event //listener used for validation, use that one.
-let submit = document.getElementsByType("button");
+let press = document.querySelector("#button");
 
-submit.addEventListener('click', addItemCard)
+// test function
+// function test1() {
+//     console.log('MEOWWWWWW')
+// }
+
+press.addEventListener('click', addItemCard);
+
 
 //When the submit event fires, if validation of the form is successful, use the values of each input in the form to call the itemsController's addItem method.
 
 //Note: Make sure to prevent the default action of the form! 
-https://wesbos.com/javascript/05-events/prevent-default-and-form-events
+//https://wesbos.com/javascript/05-events/prevent-default-and-form-events
 
 
-addProduct(title, description, img, price, createdAt)
+//addProduct(title, description, img, price, createdAt)
 
 
 

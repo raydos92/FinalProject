@@ -37,6 +37,35 @@ export function addItemCard(item) {
 }
 
 
+
+//testing function
+// export function addItemCard(item) {
+//   const itemHTML = '<div class="card" style="width: 18rem;">\n' + 
+//   '<img src="' + item.img + ' " class="card-img-top" alt="...">\n' +
+//   ' <div class="card-body">\n' +
+//     ' <h5 class="card-title">\n' + item.title + '</h5>\n' +
+//     ' <h5 class="card-price">\n' + item.price + '</h5>\n'
+//     ' <p class="card-text">\n' + item.description + '</p>\n' +
+//     ' <a href="#" class="btn btn-primary">Add to cart</a>\n' +
+//   ' </div>\n' +
+//   '</div>\n';
+//   const itemsContainer = document.getElementById("list-items");
+//   itemsContainer.innerHTML += itemHTML;
+//   return itemsContainer;
+// }
+// const obj = {
+//   id: 44,
+//   title: 'mug1',
+//   description: 'this is a mug',
+//   img: 'IMG',
+//   price: 6,
+//   createdAt: '11/22',
+// }
+
+// const test = addItemCard(obj);
+// console.log(test);
+
+
 /* sample of how to do it:
 
 var div = document.createElement("div");
