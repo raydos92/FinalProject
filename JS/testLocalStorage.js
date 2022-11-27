@@ -11,11 +11,14 @@ Modify the items.js adding a new function to save sample items data in the local
 
 
 
-const sampleItems = [{'name':'juice',
- 'img':'https://www.gs1india.org/media/Juice_pack.jpg',
- 'description':'Orange and Apple juice fresh and delicious'},
- {'name':'Tayto',
- 'img':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
- 'description':'Cheese & Onion Chips'}];
- localStorage.setItem("items", JSON.stringify(sampleItems));
- 
+const sampleItems = [{
+  'name': 'juice',
+  'img': 'https://www.gs1india.org/media/Juice_pack.jpg',
+  'description': 'Orange and Apple juice fresh and delicious'
+},
+{
+  'name': 'Tayto',
+  'img': 'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
+  'description': 'Cheese & Onion Chips'
+}];
+localStorage.setItem("items", JSON.stringify(sampleItems));

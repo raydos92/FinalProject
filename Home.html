@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <!-- changed the filepath due to file name change-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="/CSS/styles.css" type="text/css">
-    <title>Cat Mugs</title>
-</head>
-<body>
-    <header>
-        <!--INSERT NAVBAR HERE-->
-        <nav class="navbar navbar-expand-lg bg-light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
 
+		<link rel="stylesheet" href="/CSS/styles.css" type="text/css" />
+		<title>Cat Mugs</title>
+	</head>
+	<body>
+		<!-- whole of html body in this div:-->
+		<div class="container">
+			<!--start of nav-->
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Cat Mugs</a>
 
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarCollapse"
+						aria-controls="navbarCollapse"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-         <!--  need to add logo    <img class="mg" src="">    -->
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav me-auto mb-2 mb-md-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="/Home.html"
+									>home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/about.html">about</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/items-list.html">shop</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--end of nav-->
 
+			<section id="jenny" class="container container-fluid">
+				<div class="row">
+					<p>this is where we talk about our product.</p>
+					<img
+						id="aboutFirstImg"
+						src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-c4580949_360x.jpg?v=1597688472"
+						class=""
+					/>
+				</div>
+				<div>
+					<p>It's all about cat mugs.</p>
+					<p>
+						Cat mugs on mugs. Mugs for cats to knock over. Mugs to drink coffee
+						or whiskey from.
+					</p>
+				</div>
+			</section>
 
-          <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-    
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="items-list.html">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" >Help</a>
-                  </li>
-                  <!--
-                  <li class="nav-item">
-                    <a class="nav-link" href="checkout_form.html" >Your Cart</a>
-                  </li> -->
-                </ul>
-                
-              </div>
-            </div>
-          </nav>
-        <h1>Home</h1>
-    </header>
-
-    <main>
-      <section>
-
-        <section id="jenny" class="container container-fluid">
-          <div class="row">
-            <img id="aboutFirstImg" src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-c4580949_360x.jpg?v=1597688472" class="">
-          </div>
-          <div id="projectDescription">
-            <div class="">
-             <p>It's all about cat mugs. Cat mugs on mugs. Mugs for cats to knock over. Mugs to drink coffee or whiskey from. </p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-        
-      </section>
-    </main>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="./JS/itemsController.js" type="module"></script>  
-  <script src="./JS/index.js" type="module"></script>  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
-</body>
+			<!-- ends whole of html body in this div:-->
+		</div>
+		<!-- JavaScript Bundle with Popper -->
+		<script src="./JS/itemsController.js" type="module"></script>
+		<script src="./JS/index.js" type="module"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

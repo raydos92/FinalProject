@@ -11,161 +11,123 @@
     <link rel="stylesheet" href="CSS/styles.css" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <img class="mg" src="https://m.media-amazon.com/images/I/615qK0bpbpS._AC_UL480_FMwebp_QL65_.jpg">
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="items-list.html" >Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Help</a>
-              </li>
-              <!--
-              <li class="nav-item">
-                <a class="nav-link" href="checkout_form.html" >Your Cart</a> 
-              </li>
-            -->
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-      <h1>About</h1>
+    <!-- whole of html body in this div:-->
+<div class="container">
 
-      <main>
+  <!--START OF NAV-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cat Mugs</a>
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarCollapse">
 
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Home.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/items-list.html">shop</a>
+          </li>
 
+        </ul>
 
-        <section id="jenny" class="container container-fluid">
-          <div class="row">
-            <img id="aboutFirstImg" src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-c4580949_360x.jpg?v=1597688472" class="">
-          </div>
-          <div id="projectDescription">
-            <div class="">
-             <p> E-commerce site, created by Melissa, Rados, Jenny, Natalie, and Yiran. More details to come! </p>
-            </div>
-          </div>
-        </section>
-      </main>
+      </div>
+    </div>
+  </nav>
+<!--END OF NAV-->
+
+<div id="projectDescription">
+   <h6>GenerationUSA</h6>
+   <h6>Junior Full-Stack Java Developer</h6> 
+
+   <h4>David's Team 2: Final Project</h4>
+
+         
+ 
+             <p> This section is more about the project itself than the products in the store.
+             An e-commerce site created by Jenny Schmalz, Rados Berkure and Melissa Averinos. 
+            Here we can list the technologies we used and any fun tidbits.  </p>
+ </div>
+         
 
 
       
-        <section id="melissa">
-<!-- BIO CARDS-->
-<!-- opening of container div to hold all cards-->
-<!--<div class="container biocards align-content-around">-->
-  <div class="d-flex flex-wrap">
-<!-- natalie's card
-          <section>
-            <div class="card mx-4 mb-2" style="width: 16rem;">
-              <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Natalie Chapoteau</h5>
-                <h6 class="card-role">role tbd</h6>
-                <p class="card-text">
-                  Software Engineering Student at Arizona State University, Natalie enjoys building websites and creating apps.  Languages she is proficient in include Java, Python, and French.  When not indulging her love for computer science, Natalie enjoys vacationing internationally and serially murdering houseplants.  Natalie is a mother of 2 (cats).</p>
-               
-              </div>
-            </div>
-          </section>
--->
-
-<!-- rados's card-->
-          <section>
-            <div class="card mx-4 mb-2" style="width: 16rem;">
-              <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Rados</h5>
-                <h6 class="card-role text-italic">role tbd</h6>
-                <p class="card-text">
-                  rados text</p>
-                <!-- button to add back later <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div>
-            </div>
-          </section>
-
-
-<!-- jenny's card-->
-                   <section>
-                    <div class="card mx-4 mb-2" style="width: 16rem;">
-                      <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Jenny Schmalz</h5>
-                        <h6 class="card-role text-italic">role tbd</h6>
-                        <p class="card-text">Jenny has a Bachelor of Science degree in Psychology and spent most of her career working with foster children and children with disabilities. After many years of working with children, she made the transition into the tech field and joined Generation USA. Through Generation USA, she was able to become a full-stack web developer and follow her passion for coding.</p>
-                        <!-- button to add back later <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                      </div>
-                    </div>
-                  </section>
+ 
+      
         
-
-<!-- Yiran's card
-                               <section>
-                                   <div class="card mx-4 mb-2" style="width: 16rem;">
-                                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Yiran Fitzpatrick</h5>
-                                          <h6 class="card-role">role tbd</h6>
-                                          <p class="card-text">Yiran just got her master’s degree in mathematics with a specialization in statistics. During her master program, she had solved statistical problems and built statistical models by using R and done text analysis by using Python.  As she learned more about coding, she realized how much she loves coding. She has a passion for tech, creativity, and finding solutions. She loves the mental challenge that programming presents and the possibility of being able to conceive a new idea and bring it to fruition.</p>
-                                     
-                                        </div>
-                                      </div>
-                                    </section>
-                                  -->
-
-<!-- Melissa's card-->
-                                     <section>
-                                      <div class="card mx-4 mb-2" style="width: 16rem;">
-                                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Melissa Averinos</h5>
-                                          <h6 class="card-role text-italic">role tbd</h6>
-                                          <p class="card-text">
-                                           (placeholder text yoinked from linkedin) </p> <p>As a career-switcher, I'm excited to bring my years of non-traditional experience to tech!  I tackle challenges with enthusiasm, curiosity and a lot of coffee. </p>
-                                           <br>
-                                        <p>
-                                        I'm friendly and I love connecting with people. I will probably ask you if you have any cats. </p>
-                                          <!-- button to add back later <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                        </div>
-                                      </div>
-                                    </section>
-
-                                    <!-- extra  card-->
-                                    <section>
-                                      <div class="card mx-4 mb-2" style="width: 16rem;">
-                                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Card for pets?</h5>
-                                          <h6 class="card-role text-italic">role: support</h6>
-                                          <p class="card-text">
-                                           team pets?</p>
-                                          <!-- button to add back later <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                        </div>
-                                      </div>
-                                    </section>
-                          
-
-  </div> <!-- closing container div holding all cards-->
-<!-- END OF BIO CARDS-->
-        </section> 
-        </section>
-
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://scontent-bos5-1.xx.fbcdn.net/v/t1.6435-9/57128338_653037048483366_9103404254428659712_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BfEfyHs3QDIAX9nj8-O&_nc_ht=scontent-bos5-1.xx&oh=00_AfABG77T1X_YjK45SBGyXDh6QxtdGJXke0-4g9MIzo4uEA&oe=63AA4FEC" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">jenny schmalz</h5>
+        <p class="card-text">Jenny has a Bachelor of Science degree in Psychology and spent most of her career working with foster children and children with disabilities. After many years of working with children, she made the transition into the tech field and joined Generation USA. Through Generation USA, she was able to become a full-stack web developer and follow her passion for coding.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/2185/9311/files/EFB6EBFB-314F-484D-8691-E026143598D4_480x480.jpg?v=1645148858" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">melissa averinos</h5>
+        <p class="card-text">
+         As a career-switcher, I'm excited to bring my years of non-traditional experience to tech!  I tackle challenges with enthusiasm, curiosity and a lot of coffee. 
+       <br>
+      <p>
+       I'm friendly and I love connecting with people. I will probably ask you if you have any cats. 
+      </p>
+    </p> 
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/2185/9311/files/1EDEF41B-4809-48E8-9B1D-BEA63F30E413_480x480.jpg?v=1645125807" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">rados bekure</h5>
+        <p class="card-text">Rados is camera-shy, so he gets to be a cat.
+          he needs to get us some words to fill in here. 
+          i will say, his smile lights up a zoom.
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/2185/9311/files/3F6D4127-3AC0-457D-83E5-5A81FA1F5A9E_480x480.jpg?v=1645133801" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">and our pets</h5>
+        <p>this isn't really them, we'll get images of them soon</p>
+        <p class="card-text">Our pets and their unbearable cuteness made us take breaks to squee over them. They also purred a fair bit and in the case of melissa's dogs, there was quite a bit of jumping.</p>
+        <p>Jenny's cats: Meatball, Keanu and ?? </p>
+         <p>Melissa's cats: Butterbean and Blue Kitty.
+           Melissa's dogs: Max and Beau. </p> 
+          
         
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -173,9 +135,8 @@
 
 
 
-
-
-
+<!-- whole of html body in this div: now ends-->
+      </div>
     
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
