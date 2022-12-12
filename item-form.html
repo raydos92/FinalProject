@@ -11,39 +11,121 @@
 
 </head>
 <body>
-    <main>
-    
-    <div class= row>
-        <div class= col-8>
+  	<!-- whole of html body in this div:-->
+  <div  class="container">
+  
+<!--might want to add this back into the forms:
+  placeholder="product name goes here"-->
+
+
+
+    				<!--start of all nav-->
+<div id="allnav" class="d-flex flex-column m">
+  <!--start of nav1-->
+  <div id="nav1" >
+  <nav class="navbar navbar-expand-md navbar-light bg-warning mb-1">
+    <div class="container d-flex justify-content-center">
+      <a class="navbar-brand" href="/Home.html"
+        ><img
+          src="assets/fake website cat only no whiskers.png"
+          class="nav-logo-cat" /><img
+          src="assets/fake website lettering.png"
+          class="nav-logo-lettering"
+      /></a>
+      
+    </div>
+  </nav>
+  </div>
+  <!--end of nav1-->
+
+
+ <!--start of nav2-->
+
+    <div id="nav2" class="container-fluid bg-dark">
+
+        <!-- <ul class="text-dark d-flex justify-content-center">  -->
+          <ul class="nav d-flex justify-content-around">
+            <li >
+              <a class="badge badge-dark fs-5 fw-normal text-decoration-none" href="/home.html">home</a>
+            </li>
+          <li >
+            <a class="badge badge-dark fs-5 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+          </li>
+          <li >
+            <a class="badge badge-dark fs-5  fw-normal text-decoration-none" href="/about.html">about</a>
+          </li>
+          <li >
+            <a class="badge badge-dark fs-5 fw-normal text-decoration-none text-muted" href="/item-form.html">admin</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+<!--main body of form page-->
+    <div class="mt-4 container d-flex justify-content-center">
+
+
+        <div class= col-8 >
                 <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label"><b>Product Name</b></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name of the Product">
-                      </div>
-                      <div class="mb-3">
+                        <input type="text" class="form-control border-warning" id="exampleFormControlInput1" >
+              </div>
+
+            <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label"><b>Description</b></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
+                        <textarea class="form-control border-warning" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+             <div class= "mb-3">
                       <label for="basic-url"><b>Image URL</b></label>
-                      <div class="input-group mb-3">
-                        
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                      </div>
-    
-                   
-                    <div class="mb-3">
+
+
+                      <input type="text" class="form-control border-warning" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+      
+          <div class="mb-3">
                             <label for="exampleFormPrice" class= "form-label"> <b>Price</b></label>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            <input type="text" class="form-control border-warning" id="basic-url" aria-describedby="basic-addon3">
 
-                    </div> 
-                    <div class= "mb-4">
-                        <button id="button" type="submit" class="btn btn-primary">Create New Product!</button>
-                    </div>
-                    
+          </div> 
+          <div class= "mb-4">
+          
+                        <button id="button" type="submit" class="btn btn-warning fw-bold form-control ">Create New Product!</button>
+        </div>
+         
+    
     </div>
-    
-    
+  </div>
+
+     <!--start of BOTTOM nav-->
+		
+   <div id="bottom nav" class="container-fluid bg-warning">
+	<!-- <ul class="text-dark d-flex justify-content-center">  -->
+
+		<ul class="nav d-flex  justify-content-around align-text-center">
+			<li >
+				<a class="badge text-white fs-6 fw-normal text-decoration-none" href="/home.html">home</a>
+			</li>
+	
+		<li >
+			<a class="badge text-white fs-6 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+		</li>
+		<li >
+			<a class="badge  text-white fs-6  fw-normal text-decoration-none" href="/about.html">about</a>
+		</li>
+	<!-- 	<li class="fs-14 fw-normal text-muted text-decoration-none" >
+			<span>Lovingly created by David'sTeam2</span>
+		</li> -->
+		
+	</ul>
+
+<!--end of BOTTOM nav-->   
 
 
+
+
+</div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./JS/item-form.js" type="module"></script>

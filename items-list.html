@@ -12,57 +12,63 @@
  <!-- whole of html body in this div:-->
   <div class="container">
 
-<!--start of nav-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cat Mugs</a>
+	<!--start of all nav-->
+  <div id="allnav" class="d-flex flex-column m">
+    <!--start of nav1-->
+    <div id="nav1" >
+    <nav class="navbar navbar-expand-md navbar-light bg-warning mb-1">
+      <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="/Home.html"
+          ><img
+            src="assets/fake website cat only no whiskers.png"
+            class="nav-logo-cat" /><img
+            src="assets/fake website lettering.png"
+            class="nav-logo-lettering"
+        /></a>
         
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/Home.html">home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/items-list.html">shop</a>
-            </li>
-
-          </ul>
-
-        </div>
       </div>
     </nav>
-<!--end of nav-->
-  
+    </div>
+    <!--end of nav1-->
 
-  <div class="container" id="list-items">
+
+<!--start of nav2-->
+  
+      <div id="nav2" class="container-fluid bg-dark">
+
+          <!-- <ul class="text-dark d-flex justify-content-center">  -->
+            <ul class="nav d-flex justify-content-around">
+              <li >
+                <a class="badge badge-dark fs-5 fw-normal text-decoration-none" href="/home.html">home</a>
+              </li>
+            <li >
+              <a class="badge badge-dark fs-5 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+            </li>
+            <li >
+              <a class="badge badge-dark fs-5  fw-normal text-decoration-none" href="/about.html">about</a>
+            </li>
+            <li >
+              <a class="badge badge-dark fs-5 fw-normal text-decoration-none text-muted" href="/item-form.html">admin</a>
+            </li>
+          </ul>
+        </div>
+    <!--end of SECOND nav-->
+
+
+    <!--end of all nav-->
+
+  <div class="container mt-4" id="list-items">
 <h4>shop our adorable cat mugs</h4>
 <br>
 
 <!-- this is the part that will populate from function -->
-<div id="template" class="card" style="width: 14rem;">
+<div id="template" class="card border-warning" style="width: 14rem;">
       <img src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-0e89be3e_540x.jpg?v=1600827382" class="card-img-top" alt="...">
       <div class= "container" class="card-body">
         <h6 class="card-title"> "Hang in There, Baby!" mug</h6>
-        <h5 class="card-price">Price</h5>
-        <p class="card-text">Description meow</p>
-        <a href="#" class="btn btn-primary">Add to cart</a>
+        <p class="card-text">Description will populate here.</p>
+        <h6 class="card-price">Price will go here</h6>
+        <a href="#" class="btn btn-warning fw-bold text-dark">need it!</a>
       </div>
   </div>
 
@@ -71,24 +77,32 @@
 
 
 <!-- testing out this bottom nav-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 bottom">
-    
-  <a class="navbar-brand" href="#"></a>
-  <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="/Home.html">home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about.html">about</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/items-list.html">shop</a>
-    </li>
-  </ul>
-</nav>
 
 
+<!--start of BOTTOM nav-->
+		
+<div id="bottom nav" class="container-fluid bg-warning">
+	
+	<!-- <ul class="text-dark d-flex justify-content-center">  -->
+
+		<ul class="nav d-flex  justify-content-around align-text-center">
+			<li >
+				<a class="badge text-white fs-6 fw-normal text-decoration-none" href="/home.html">home</a>
+			</li>
+	
+		<li >
+			<a class="badge text-white fs-6 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+		</li>
+		<li >
+			<a class="badge  text-white fs-6  fw-normal text-decoration-none" href="/about.html">about</a>
+		</li>
+	<!-- 	<li class="fs-14 fw-normal text-muted text-decoration-none" >
+			<span>Lovingly created by David'sTeam2</span>
+		</li> -->
+		
+	</ul>
+</div>
+<!--end of BOTTOM nav-->
 
 <!-- whole of html body in this div: now ends-->
 </div>
