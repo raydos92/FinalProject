@@ -1,5 +1,11 @@
 // create ProductsController Class
 
+
+//Modify the ItemsController so it loads the data from the local storage implementing a new function items.js
+
+
+
+
 export class ProductsController {
     constructor(currentId = 0) {
       this.products = [];
@@ -24,7 +30,32 @@ export class ProductsController {
     }
   }
 
+  let item = getElementBy
+
+  /*
+
+  localStorage.setItem("test", JSON.stringify(obj));
+
+
+  function loadFromStorage(){
+  const result = JSON.parse(localStorage.getItem("test"))
+  console.log(result);
+  console.log("omg did we do it?");
+  }
   
+  loadFromStorage();
+
+
+*/
+
+
+
+
+
+
+
+
+
   
   // tests
     // const mugs = new ProductsController();

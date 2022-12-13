@@ -5,103 +5,110 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles.css" type="text/css">
   <title>Document</title>
 </head>
 <body>
+ <!-- whole of html body in this div:-->
+  <div class="container">
 
-
-
-    <!--INSERT NAVBAR HERE-->
-    <div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-
-      <!-- search form /not using
+	<!--start of all nav-->
+  <div id="allnav" class="d-flex flex-column m">
+    <!--start of nav1-->
+    <div id="nav1" >
+    <nav class="navbar navbar-expand-md navbar-light bg-warning mb-1">
+      <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="/Home.html"
+          ><img
+            src="assets/fake website cat only no whiskers.png"
+            class="nav-logo-cat" /><img
+            src="assets/fake website lettering.png"
+            class="nav-logo-lettering"
+        /></a>
         
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        -->
-<!-- // testing the next line div without this class :   class="container-fluid" -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="items-list.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Help</a>
-              </li>
-
-              <!-- checkout / not using
-              <li class="nav-item">
-                <a class="nav-link" href="checkout_form.html" >Your Cart</a>
-              </li> -->
-
-
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
     </div>
+    <!--end of nav1-->
 
 
+<!--start of nav2-->
+  
+      <div id="nav2" class="container-fluid bg-dark">
+
+          <!-- <ul class="text-dark d-flex justify-content-center">  -->
+            <ul class="nav d-flex justify-content-around">
+              <li >
+                <a class="badge badge-dark fs-5 fw-normal text-decoration-none" href="/home.html">home</a>
+              </li>
+            <li >
+              <a class="badge badge-dark fs-5 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+            </li>
+            <li >
+              <a class="badge badge-dark fs-5  fw-normal text-decoration-none" href="/about.html">about</a>
+            </li>
+            <li >
+              <a class="badge badge-dark fs-5 fw-normal text-decoration-none text-muted" href="/item-form.html">admin</a>
+            </li>
+          </ul>
+        </div>
+    <!--end of SECOND nav-->
 
 
+    <!--end of all nav-->
 
-    <h1>products available</h1>
-
-  <div class="container" id="list-items">
-
-
-
-
-
-
-
+  <div class="container mt-4" id="list-items">
+<h4>shop our adorable cat mugs</h4>
+<br>
 
 <!-- this is the part that will populate from function -->
-<div id="template" class="card" style="width: 14rem;">
+<div id="template" class="card border-warning" style="width: 14rem;">
       <img src="https://cdn.shopify.com/s/files/1/2185/9311/products/mockup-0e89be3e_540x.jpg?v=1600827382" class="card-img-top" alt="...">
       <div class= "container" class="card-body">
         <h6 class="card-title"> "Hang in There, Baby!" mug</h6>
-        <h5 class="card-price">Price</h5>
-        <p class="card-text">Description meow</p>
-        <a href="#" class="btn btn-primary">Add to cart</a>
+        <p class="card-text">Description will populate here.</p>
+        <h6 class="card-price">Price will go here</h6>
+        <a href="#" class="btn btn-warning fw-bold text-dark">need it!</a>
       </div>
+  </div>
+
 </div>
 
 
 
+<!-- testing out this bottom nav-->
 
 
+<!--start of BOTTOM nav-->
+		
+<div id="bottom nav" class="container-fluid bg-warning">
+	
+	<!-- <ul class="text-dark d-flex justify-content-center">  -->
+
+		<ul class="nav d-flex  justify-content-around align-text-center">
+			<li >
+				<a class="badge text-white fs-6 fw-normal text-decoration-none" href="/home.html">home</a>
+			</li>
+	
+		<li >
+			<a class="badge text-white fs-6 fw-normal  text-decoration-none" href="/items-list.html">shop</a>
+		</li>
+		<li >
+			<a class="badge  text-white fs-6  fw-normal text-decoration-none" href="/about.html">about</a>
+		</li>
+	<!-- 	<li class="fs-14 fw-normal text-muted text-decoration-none" >
+			<span>Lovingly created by David'sTeam2</span>
+		</li> -->
+		
+	</ul>
+</div>
+<!--end of BOTTOM nav-->
+
+<!-- whole of html body in this div: now ends-->
+</div>
 
 
-
-
-
-
-
-
-
-
-  <!--  > <h2>Sample meow 2</h2>
-    <h3>Sample meow 3</h3>
-    -->
-
-
-
-  </div>
-
-
+</body>
 
   <script src="./JS/item-form.js" type="module"></script>
   <script src="./JS/items.js" type="module"></script>

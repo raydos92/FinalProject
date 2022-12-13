@@ -1,16 +1,21 @@
-/* this selected all images, so I commented it out - it made all the images of the cards go wacky! -melissa 
-.mg {
-    width: 50px;
-    height: 50px
+
+.nav-logo-cat{
+  max-width: 4rem;
+  min-width: 1rem;
 }
-*/
-h1{
-    text-align: center
+
+.nav-logo-lettering{
+ max-height:4rem;
+}
+.large-logo{
+  max-width: 60%;
+  min-width: 40%;
 }
 
 
-div{
-    display:block;
+
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
 }
 
 .rte {
@@ -49,18 +54,11 @@ hr {
     padding-left:auto ;
 
 }
-.mg{
+.img{
     width:50px;
     height:50px;
 }
 
-#aboutFirstImg {
-    /* jenny, i changed the height and width to be rems so they will scale! -melissa */
-    height: 20rem;
-    width: 20rem;
-    display: block;
-    margin: 0 auto;
-}
 
 /* on bio cards, makes our roles in italic */
 .card-role {
@@ -70,11 +68,12 @@ hr {
 }
 
 .card {
-    display: flex;
+   /* display: flex; */
+    align-items: center ;
 }
 
 body {
-    font-family: Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
     padding: 8px;
   }
@@ -113,10 +112,10 @@ body {
   }
   
   .container {
-    background-color: #f2f2f2;
+    align-items: center;
     padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
     border-radius: 3px;
+    text-align: center;
   }
   
   input[type=text] {
@@ -139,8 +138,8 @@ body {
   }
   
   .btn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: warning;
+    color: black;
     padding: 12px;
     margin: 10px 0;
     border: none;
@@ -150,10 +149,8 @@ body {
     font-size: 17px;
   }
   
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
+
+
   a {
     color: #2196F3;
   }
@@ -170,9 +167,32 @@ body {
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
   @media (max-width: 800px) {
     .row {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     .col-25 {
       margin-bottom: 20px;
     }
   }
+a:hover  {
+ color: pink;
+}
+
+ a:visited {
+  color: pink ;
+} 
+
+.form-control:focus {
+  border-color: #ff80ff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+}
+.btn:hover{
+  background-color: pink;
+  border-color: #ff80ff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+  outline: none;
+}
+.btn:focus {
+  border: 0;
+  
+}
+
