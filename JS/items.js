@@ -2,11 +2,11 @@
 
 export function addItemCard(item) {
   const itemHTML = '<div class="card" style="width: 18rem;">\n' + 
-  '<img src="' + item.img + ' " class="card-img-top" alt="...">\n' +
+  '<img src="' + item.imgageUrl + ' " class="card-img-top" alt="...">\n' +
   ' <div class="card-body">\n' +
-    ' <h5 class="card-title">\n' + item.title + '</h5>\n' +
+    ' <h5 class="card-name">\n' + item.name + '</h5>\n' +
     ' <h5 class="card-price">\n' + item.price + '</h5>\n' 
-   + ' <p class="card-text">\n' + item.description + '</p>\n' +
+   + ' <p class="card-description">\n' + item.description + '</p>\n' +
     ' <a href="#" class="btn btn-primary">Add to cart</a>\n' +
   ' </div>\n' +
   '</div>\n';
@@ -18,7 +18,7 @@ export function addItemCard(item) {
 /*
  const obj = {
    id: 44,
-   title: 'mug1',
+   name: 'mug1',
    description: 'this is a mug',
    img: 'IMG',
    price: 6,

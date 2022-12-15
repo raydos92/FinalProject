@@ -18,11 +18,13 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
-.rte {
+/* .rte {
     margin-bottom: 15px;
     line-height: 1.7;
     color: #777;
-}
+} */
+
+
 hr.hr--small {
     border-width: 1px 0 0;
     margin: 15px auto;

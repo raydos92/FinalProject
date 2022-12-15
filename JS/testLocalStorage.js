@@ -22,3 +22,4 @@ const sampleItems = [{
   'description': 'Cheese & Onion Chips'
 }];
 localStorage.setItem("items", JSON.stringify(sampleItems));
+

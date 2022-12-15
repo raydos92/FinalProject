@@ -1,36 +1,61 @@
-// create ProductsController Class
 
 
 //Modify the ItemsController so it loads the data from the local storage implementing a new function items.js
 
+// TASK 10: In js/ItemsController.js, implement a new function called save that will POST the new item's data using the fetch function
+
+//code from task below
+
+function save(name, description, imageUrl, price){
+  const data = { name, description, imageUrl, price };
+
+  fetch('http://localhost:8080/item-form', {
+  method: 'POST', // or 'PUT'
+  headers: {
+      'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(data => {
+  console.log('Success:', data);
+  })
+  .catch((error) => {
+  console.error('Error:', error);
+  });
+}
 
 
 
-export class ProductsController {
+
+
+
+//stuff from before is below
+export class ItemController {
     constructor(currentId = 0) {
-      this.products = [];
+      this.item = [];
       this.currentId = currentId;
     }
   
-    // create addProduct method
+    // create addItem method
     
-    addProduct(title, description, img, price, createdAt) {
+    addItem(name, description, imageUrl, price) {
       const item = {
         id: this.currentId++,
-        title: title,
+        name: name,
         description: description,
-        img: img,
+        imageUrl: imageUrl,
         price: price,
-        createdAt: createdAt,
+      
       };
   
       // push item to items array
       
-      this.products.push(item);
+      this.item.push(item);
     }
   }
 
-  let item = getElementBy
+  // let item = getElementBy
 
   /*
 
@@ -58,8 +83,8 @@ export class ProductsController {
 
   
   // tests
-    // const mugs = new ProductsController();
-    // mugs.addProduct('catMug1', "it's a mug", 'IMG', 3, '11/22');
-    // console.log(mugs.products);
-    // mugs.addProduct('catMug2', "it's a mug", 'IMG', 5, '11/22');
-    // console.log(mugs.products);
+    // const mugs = new itemController();
+    // mugs.addProduct('catMug1', "it's a mug", 'imageUrl', 3, '11/22');
+    // console.log(mugs.item);
+    // mugs.addProduct('catMug2', "it's a mug", 'imageUrl', 5, '11/22');
+    // console.log(mugs.item);
