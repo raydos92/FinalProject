@@ -30,9 +30,8 @@ export class ProductsController {
     }
   }
 
-  let item = getElementBy
+  // let item = getElementBy
 
-  /*
 
   localStorage.setItem("test", JSON.stringify(obj));
 
@@ -46,7 +45,7 @@ export class ProductsController {
   loadFromStorage();
 
 
-*/
+
 
 
 

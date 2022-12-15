@@ -1,17 +1,17 @@
 import { addItemCard } from './items.js';
-import { ProductsController } from './itemsController.js';
+import { ItemsController } from './itemsController.js';
 
 //Make sure a new ItemsController is initialized near the top of the item-form.js file.
 
-const mugs = new ProductsController();
+const mugs = new ItemsController();
 
 //In item-form.js, add an event listener to the New Item form, listening to the submit event. If there is already an event //listener used for validation, use that one.
 let press = document.querySelector("#button");
 
 // test function
-// function test1() {
-//     console.log('MEOWWWWWW')
-// }
+function testThursday() {
+    console.log('MEOWWWWWW')
+}
 
 press.addEventListener('click', addItemCard);
 
